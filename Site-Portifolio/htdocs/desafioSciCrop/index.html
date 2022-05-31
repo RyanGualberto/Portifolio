@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de Locais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Locais</h1>
+        <h2>&copy; Desenvolvido por Ryan Gualberto</h2>
+    </header>
+    <main>
+        <form onsubmit="cadastraEndereco()" id="addres-form">
+            <h2>Nome do local:</h2>
+            <input type="text" id="nome">
+            <h2>Latitude:</h2>
+            <input type="text" id="latitude" placeholder="xx.xxxxxxx">
+            <h2>Longitude:</h2>
+            <input type="text" id="longitude" placeholder="xx.xxxxxxx">
+            <input type="submit" value="Cadastrar" class="button" onclick="addMaker()">
+            <div class="box">
+                <header>
+                    <h1>Enderecos Salvos</h1>
+                </header>
+                <hr>
+                <h2>Nome | Latitude | Longitude</h2>
+
+                <main id="addres-List">
+
+                    <a href="index.html"> Limpar</a>
+                </main>
+            </div>
+        </form>
+        <div id="map"></div>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
