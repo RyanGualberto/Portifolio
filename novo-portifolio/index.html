@@ -49,14 +49,14 @@
     </header>
     <main>
         <section class="container home" id="home">
-            <div class="column">
+            <div class="column" data-anime="left">
                 <h1 class="title"></h1>
                 <p>Meu nome é Ryan Gualberto, e eu sou um <span class="destaque">Desenvolvedor Full Stack</span> em
                     Formação
                     Este é o meu portifolio, onde você pode encontrar tudo sobre minha vida Academica-Profissional</p>
                 <a href="#sobre" class="btn">saiba mais</a>
             </div>
-            <div class="column">
+            <div class="column" data-anime="right">
                 <img src="assets/img-home.png" alt="">
             </div>
             <h2>arrasta pra cima</h2>
@@ -64,12 +64,12 @@
         <section class="container sobre" id="sobre">
 
             <h1>sobre</h1>
-            <div class="column">
-                <img src="assets/img-sobre.png" alt="">
+            <div class="column" data-anime="left">
+                <img src="assets/img-sobre.png" alt="" >
             </div>
-            <div class="column">
+            <div class="column" data-anime="right">
                 <h2>Ryan Gualberto</h2>
-                <ul>
+                <ul >
                     <li>Estudante quinto semestre em ADS</li>
                     <li>Apaixonado por programação</li>
                     <li>Full Stack Developer</li>
@@ -81,9 +81,9 @@
                 </ul>
             </div>
             <div class="barra">
-                <div class="column">
+                <div class="column" >
                     <h1>Soft Skills</h1>
-                    <ul>
+                    <ul data-anime="left">
                         <li>Comunicativo</li>
                         <li>Desruptivo</li>
                         <li>Proativo</li>
@@ -91,9 +91,9 @@
                         <li>Flexível</li>
                     </ul>
                 </div>
-                <div class="column">
+                <div class="column" >
                     <h1>Hard Skills</h1>
-                    <ul>
+                    <ul data-anime="right">
                         <li>HTML5, CSS3 e JS - Experiente</li>
                         <li>PHP - Quase lá</li>
                         <li>Python- intermediário</li>
@@ -105,7 +105,7 @@
         </section>
         <section class="container projetos" id="projetos">
             <h1>PROJETOS</h1>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-anime="left">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -217,6 +217,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
     <script>
         //chamando animação de digitação
         var typed = new Typed(".title", {
@@ -230,23 +231,6 @@
             loop: true
         });
 
-        const btnMobile = document.getElementById('btn-mobile');
-
-        function toggleMenu(event) {
-            if (event.type === 'touchstart') event.preventDefault();
-            const nav = document.getElementById('nav');
-            nav.classList.toggle('active');
-            const active = nav.classList.contains('active');
-            event.currentTarget.setAttribute('aria-expanded', active);
-            if (active) {
-                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-            } else {
-                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-            }
-        }
-
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
     </script>
 </body>
 
