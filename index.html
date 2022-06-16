@@ -5,233 +5,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Ryan Gualberto</title>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <title>Portifolio</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            ryan gualberto
+        <div class="logo">RYAN<span class="titulo">D E V</span>
         </div>
-        <nav>
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-            aria-expanded="false">
-            <span id="hamburger"></span>
-        </button>
-            <ul>
-                <li>
-                    <a href="#home">
-                        home
-                    </a>
-                </li>
-                <li>
-                    <a href="#sobre">
-                        sobre
-                    </a>
-                </li>
-                <li>
-                    <a href="#projetos">
-                        projetos
-                    </a>
-                </li>
-                <li>
-                    <a href="#contato">
-                        contato
-                    </a>
-                </li>
 
+
+        <nav id="nav">
+            <button id="btnMenu"><span id="hamburguer"></span></button>
+            <ul id="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#project">PROJETOS</a></li>
+                <li><a href="https://github.com/RyanGualberto" target="_blank"><img src="assets/iconegit.svg"
+                            alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/ryan-gualberto-a1a89a231/" target="_blank"><img
+                            src="assets/iconeLinkedin.png" alt=""></a></li>
+                <li><a href=mailto:"RyanOliveiraGualberto@gmail.com"> <img src="assets/iconeEmail.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="container home" id="home">
-            <div class="column" data-anime="left">
-                <h1 class="title"></h1>
-                <p>Meu nome é Ryan Gualberto, e eu sou um <span class="destaque">Desenvolvedor Full Stack</span> em
-                    Formação
-                    Este é o meu portifolio, onde você pode encontrar tudo sobre minha vida Academica-Profissional</p>
-                <a href="#sobre" class="btn">saiba mais</a>
+        <section class="home">
+            <h3> full stack <br>developer</h3>
+            <div class="social-media">
+                <a href="https://github.com/RyanGualberto" target="_blank"><img src="assets/iconegit.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/ryan-gualberto-a1a89a231/" target="_blank"><img
+                        src="assets/iconeLinkedin.png" alt=""></a>
+                <a href=mailto:"RyanOliveiraGualberto@gmail.com"> <img src="assets/iconeEmail.png" alt=""></a>
             </div>
-            <div class="column" data-anime="topo">
-                <img src="assets/img-home.png" alt="">
-            </div>
-            <h2>arrasta pra cima</h2>
-        </section>
-        <section class="container sobre" id="sobre">
+            <h2><span class="animation-welcome"></span>
+                <h2>
 
-            <h1>sobre</h1>
-            <div class="column" data-anime="left">
-                <img src="assets/img-sobre.png" alt="" >
-            </div>
-            <div class="column" data-anime="right">
-                <h2>Ryan Gualberto</h2>
-                <ul >
-                    <li>Estudante quinto semestre em ADS</li>
-                    <li>Apaixonado por programação</li>
-                    <li>Full Stack Developer</li>
-                    <li>Membro da Symetra</li>
-                    <li>Praia Grande - SP</li>
-                    <li>17 Anos</li>
-                    <li class="download"><a href="download/Curriculo.pdf" download="Curriculo.pdf"
-                            type="application/pdf" class="btn"> Currículo</a></li>
-                </ul>
-            </div>
-            <div class="barra">
-                <div class="column" >
-                    <h1>Soft Skills</h1>
-                    <ul data-anime="left">
-                        <li>Comunicativo</li>
-                        <li>Desruptivo</li>
-                        <li>Proativo</li>
-                        <li>Trabalho em Equipe</li>
-                        <li>Flexível</li>
-                    </ul>
-                </div>
-                <div class="column" >
-                    <h1>Hard Skills</h1>
-                    <ul data-anime="right">
-                        <li>HTML5, CSS3 e JS - Experiente</li>
-                        <li>PHP - Quase lá</li>
-                        <li>Python- intermediário</li>
-                        <li>React Native e Angular - Uma boa noção</li>
-                        <li>MySql e técnicas de QA - Iniciando</li>
-                    </ul>
-                </div>
-            </div>
         </section>
-        <section class="container projetos" id="projetos">
-            <h1>PROJETOS</h1>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-anime="left">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h1>Flapy bird</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>um mini-game Flapy-bird Desenvolvido com JavaScript e Bootstrap, Disponível apenas para
-                                Smartphones </p>
-                            <img src="assets/imagens/FlapyBirdimg.png" alt="">
-                        </div>
-                        <a href="download/app-Flapy-Bird.apk" download="app-Flapy-Bird.apk" target="_blank"
-                            class="btn">acessar</a>
+
+        <section class="sobre">
+            <a name="sobre">
+                <h1>sobre</h1>
+
+                <group>
+                    <div class="left">
+                        <img src="assets/fotoPerifl.jpeg" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <h1>Cadastro de Localizações</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>uma página web, na qual é possível cadastrar lozalizações através de latitude e
-                                longitude, o sistema busca o local, armazena na lista de endereços, e adiciona um
-                                marcador no mapa, Feito com HTML, CSS e JS, Disponível para qualquer dispositivos</p>
-                            <img src="assets/imagens/pjt2.png" alt="">
-                        </div>
-                        <a href="desafioSciCrop/index.html" class="btn">acessar</a>
+                    <div class="right">
+                        <h2>ryan gualberto</h2>
+                        <p>
+                            Sou estudante de Análise e Desenvolvimento de Sistemas, estou cursando meu ultimo ano e
+                            estou em busca de uma vaga estágio como programador.
+
+                        </p>
+                        <h2>
+                            Linguagens que utilizo
+                        </h2>
+                        <img src="assets/barra logos.png" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <h1>Portal Academico PHP</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>Meu portal Academico, no qual realizei diversas atividades, durante o aprendizado da
-                                linguagem</p>
-                            <img src="assets/imagens/php-logo.png" alt="">
-                        </div>
-                        <a href="http://rvzinnbeats.infinityfreeapp.com/" class="btn">acessar</a>
-                    </div>
-                    <div class="carousel-item">
-                        <h1>Site Animal Point</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>Site Estático, do projeto animal Point, Desenvolvido com HTML, CSS e JS</p>
-                            <img src="assets/imagens/AnimalPoint-Logo.png" alt="">
-                        </div>
-                        <a href="animalPoint/index.html" class="btn">acessar</a>
-                    </div>
-                    <div class="carousel-item">
-                        <h1>Landing Page Flex Turismos</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>Landing Page de uma empresa fictcia chamada flex Turismos, projeto Desenvolvido com HTML
-                                e CSS durante o bootcamp Santander 2022</p>
-                            <img src="assets/imagens/FlexTurismos-Logo.png" alt="">
-                        </div>
-                        <a href="Landing-Page-FlexTurismos/index.html" class="btn">acessar</a>
-                    </div>
-                    <div class="carousel-item">
-                        <h1>Landing Page Login Instagram</h1>
-                        <br>
-                        <div class="card-content">
-                            <p>Landing Page de uma empresa fictcia chamada flex Turismos, projeto Desenvolvido com HTML
-                                e CSS durante o bootcamp Santander 2022</p>
-                            <img src="assets/imagens/instagram-Logo.png" alt="">
-                        </div>
-                        <a href="Landing-Page-Instagram/" class="btn">acessar</a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                </group>
+                <button>
+                    <a href="download/Curriculo.pdf" download="Curriculo.pdf" type="application/pdf">curriculo</a>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            </div>
         </section>
-        <section class="container contato" id="contato">
-            <h1>contato</h1>
-            <h2>E aí curtiu? Entre em contato comigo através do meu email, manda uma solicitação de conexão no linkedin
-                e me segue no github</h2>
+        <section class="project">
+            <a name="project">
+                <h1>projetos</h1>
+                <div class="carousel">
+                    <div class="card">
+                        <h1>flapy Bird</h1>
+                        <div class="cards-content">
+                            <img src="assets/FlapyBirdimg.png" class="imagens">
+                            <p>Nesse projeto desenvolvi um aplicativo mini-game de flapy bird, usando javaScript e
+                                bootstrap, o aplicativo está disponível apenas para android, espero que goste.
+                            </p>
+                        </div>
+                        <div class="group-links">
+                            <a href="download/app-Flapy-Bird.apk" download="app-Flapy-Bird.apk"
+                                target="_blank"><button>Acessar</button></a>
+                            <a href="https://github.com/RyanGualberto/App-Jogo-JS" target="_blank"><img
+                                    src="assets/iconegit.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Cadastro de Localizacoes</h1>
+                        <div class='cards-content'>
+                            <img src="assets/pjt2.png" class="imagens">
+                            <p>Nesse projeto, desenvolvi um sistema de Cadastro de localidades, utilizando a biblioteca
+                                de mapas Leaflet, nele você adiciona endereços e ele adicona marcações ao mapa no local
+                                escolhido. Tecnologias utilizadas: HTML, CSS e JS</p>
+                        </div>
+                        <div class="group-links">
+                            <a href="desafioSciCrop/" target="_blank"><button>Acessar</button></a>
+                            <a href="https://github.com/RyanGualberto/desafioSciCrop.git" target="_blank"> <img
+                                    src="assets/iconegit.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>em Breve</h1>
+                        <div class="cards-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit magni animi quis
+                                necessitatibus. Perspiciatis ut ipsa quaerat, quo commodi, consectetur facere
+                                consequatur
+                                tempora molestias, placeat at? Voluptates, ratione. Molestias. Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Delectus corrupti repellendus in impedit dignissimos
+                                aspernatur
+                                quibusdam fugit repellat quidem qui doloremque ipsa a cumque non, itaque mollitia
+                                dolorem
+                                facilis dolore! </p>
+                        </div>
+                        <div class="group-links">
+                            <a href="#" target="_blank"><button>Acessar</button></a>
+                            <a href="#" target="_blank"><img src="assets/iconegit.svg" alt=""></a>
+                        </div>
 
+                    </div>
+                    <div class="card">
+                        <h1>em Breve</h1>
+                        <div class="cards-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit magni animi quis
+                                necessitatibus. Perspiciatis ut ipsa quaerat, quo commodi, consectetur facere
+                                consequatur
+                                tempora molestias, placeat at? Voluptates, ratione. Molestias. Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Delectus corrupti repellendus in impedit dignissimos
+                                aspernatur
+                                quibusdam fugit repellat quidem qui doloremque ipsa a cumque non, itaque mollitia
+                                dolorem
+                                facilis dolore! </p>
+                        </div>
+                        <div class="group-links">
+                            <a href="#" target="_blank"><button>Acessar</button></a>
+                            <a href="#" target="_blank"><img src="assets/iconegit.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>em Breve</h1>
+                        <div class="cards-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit magni animi quis
+                                necessitatibus. Perspiciatis ut ipsa quaerat, quo commodi, consectetur facere
+                                consequatur
+                                tempora molestias, placeat at? Voluptates, ratione. Molestias. Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Delectus corrupti repellendus in impedit dignissimos
+                                aspernatur
+                                quibusdam fugit repellat quidem qui doloremque ipsa a cumque non, itaque mollitia
+                                dolorem
+                                facilis dolore! </p>
+                        </div>
+                        <div class="group-links">
+                            <a href="#" target="_blank"><button>Acessar</button></a>
+                            <a href="#" target="_blank"><img src="assets/iconegit.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>em Breve</h1>
+                        <div class="cards-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit magni animi quis
+                                necessitatibus. Perspiciatis ut ipsa quaerat, quo commodi, consectetur facere
+                                consequatur
+                                tempora molestias, placeat at? Voluptates, ratione. Molestias. Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Delectus corrupti repellendus in impedit dignissimos
+                                aspernatur
+                                quibusdam fugit repellat quidem qui doloremque ipsa a cumque non, itaque mollitia
+                                dolorem
+                                facilis dolore! </p>
+                        </div>
+                        <div class="group-links">
+                            <a href="#" target="_blank"><button>Acessar</button></a>
+                            <a href="#" target="_blank"><img src="assets/iconegit.svg" alt=""></a>
+                        </div>
 
-            <div class="row">
-                <a href="https://github.com/RyanGualberto"><img src="assets/imagens/iconegit.svg" alt=""></a>
-                <a href=""><img class="email" src="assets/imagens/iconeEmail.png" alt=""></a>
-                <a href=""><img src="assets/imagens/iconeLinkedin.png" alt=""></a>
-            </div>
-            <footer>
-                <h3>&copy; Ryan Gualberto 2022</h3>
-                <h3>Desenvolvido por Ryan Gualberto</h3>
-            </footer>
+                    </div>
+
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <footer>
+
+        <div class="group">
+            <h1> desenvolvido por Ryan Gualberto</h1>
+            <input type="checkbox" id="switch">
+            <label for="switch" class="switchLabel">
+                <div class="icons">
+                    <box-icon name='moon' type='solid' animation='spin' rotate='180' color='#ffffff'></box-icon>
+                    <box-icon name='sun' type='solid' rotate='180' animation='spin' color='#ffffff'></box-icon>
+                    <div class="ball"></div>
+                </div>
+            </label>
+            <div class="social-media">
+                <a href="https://github.com/RyanGualberto" target=_blank"> <img src="assets/iconegit.svg" alt=""> </a>
+                <a href="https://www.linkedin.com/in/ryan-gualberto-a1a89a231/" target="_blank"><img src="assets/iconeLinkedin.png" alt=""></a>
+                <a href=mailto:"RyanOliveiraGualberto@gmail.com"> <img src="assets/iconeEmail.png" alt=""></a>
+            </div>
+        </div>
+        <p>&copy; Ryan Gualberto 2022</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="script.js"></script>
+
     <script>
-        //chamando animação de digitação
-        var typed = new Typed(".title", {
-            //texto da animação
-            strings: ["print('SEJA BEM VINDO');", "SEJA BEM VINDO"],
-            //velocidade da digitação
+
+        var typed = new Typed(".animation-welcome", {
+            strings: ["document.writeln('SEJA BEM VINDO');", "SEJA BEM VINDO"],
             typeSpeed: 100,
-            //velocidade para apagar
             backSpeed: 70,
-            //rodando infinitamente
             loop: true
         });
 
     </script>
+    <style type="text/css" data-typed-js-css="true">
+        .typed-cursor {
+            opacity: 1;
+            color: #30A5BF;
+        }
+
+        .typed-cursor.typed-cursor--blink {
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+        }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    </script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
