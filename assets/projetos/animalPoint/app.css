@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --headerColor: #72B5A4;
+    --backgroundBodyColor: #CEE0DC;
+    --p-Color: black;
+    --titles-Color: black;
+    --backgroundsCardsColor: #EAFFFA;
+    --inputsColor: rgb(255, 255, 255);
+        --footer-color: whitesmoke;
+
+}
+
+.modoEscuro:root {
+    --backgroundBodyColor: #474747;
+    --p-Color: whitesmoke;
+    --titles-Color: whitesmoke;
+    --backgroundsCardsColor: rgb(107, 131, 126);
+    --inputsColor: rgb(221, 221, 221);
+    --footer-color: whitesmoke;
+
+
+}
+strong {
+    color: #5630b7;
+    font-weight: 1000;
+    font-size:  18px;
+}
+
+#switch {
+    display: none;
+}
+
+#switch:checked+.switchLabel:after {
+    content: 'on';
+}
+
+.switchLabel {
+    cursor: pointer;
+}
+
+.switchLabel:after {
+    content: 'off';
+}
+
+body {
+    margin: 0;
+    background-color: var(--backgroundBodyColor);
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    background-color: var(--headerColor);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 20px solid #F15E46;
+    width: 100%;
+    display: flex;
+}
+
+#logo {
+    margin-left: 1%;
+    width: 20%;
+    height: 15%;
+}
+
+.textAnime {
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 40%;
+    height: 4vh;
+    font-size: 180%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #e95a44;
+    
+}
+.textAnime::after{
+    content: '';
+    animation: txtAnime 4s linear infinite;
+}
+
+@keyframes txtAnime {
+    0% {content: 'Animal Point';}
+    25% {content: '';}
+    75% {content: 'um novo jeito de vender';}
+    100% {content: '';}
+    
+}
+.search {
+    display: flex;
+    margin-top: 3.5%;
+    width: 25%;
+    height: 1%;
+    margin-left: 23%;
+}
+
+.search input {
+    width: 50%;
+    border-radius: 1em;
+    border: 1px solid #CEE0DC;
+    background-color: var(--inputsColor);
+}
+
+.search input:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+#iconSearch {
+    width: 15%;
+    cursor: pointer;
+    margin-right: 0.5%;
+}
+
+
+
+.row {
+    width: 100%;
+    display: flex
+}
+
+.card {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 6%;
+    width: 41%;
+    height: 55%;
+    border-radius: 0.9em;
+    border-bottom: 27px solid #F15E46;
+    text-align: center;
+    background-color: var(--backgroundsCardsColor);
+    transition: transform 1s;
+}
+
+
+.card p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify-content;
+}
+
+.card img {
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+.card:hover {
+    border: 3px dotted #F15E46;
+    box-shadow: 1px 1px 2px 2px #F15E46;
+    transform: scale(1.1);
+}
+
+.card2 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 6%;
+    width: 41%;
+    height: 55%;
+    border-radius: 0.9em;
+    border-bottom: 27px solid #72B5A4;
+    text-align: center;
+    background-color: var(--backgroundsCardsColor);
+    transition: transform 0.5s;
+}
+
+.card2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify-content;
+}
+
+.card2 img {
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+.card2:hover {
+    border: 3px dotted #72B5A4;
+    box-shadow: 1px 1px 2px 2px #72B5A4;
+    transform: scale(1.1);
+}
+
+main input {
+    border: 0.5px solid gray;
+    border-radius: 1em;
+    width: 40%;
+    height: 4.5vh;
+    background-color: var(--inputsColor);
+}
+
+main input:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+textarea {
+    width: 40%;
+    border-radius: 0.9em;
+}
+
+textarea:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+#botaoEnviar {
+    margin-left: -20%;
+    margin-top: 1%;
+    width: 20%;
+    height: 6vh;
+    border-radius: -20px;
+    font-size: 18px;
+    background-color: #F15E46;
+    color: #EAFFFA;
+    cursor: pointer;
+}
+
+#botaoEnviar:hover {
+    opacity: 0.8;
+    box-shadow: 1px 1px #F15E46;
+}
+
+hr {
+    border: 2px solid #ffffff;
+    margin-bottom: 5%;
+}
+
+footer {
+    background-color: #F15E46;
+    height: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--footer-color);
+}
+p {
+    color: var(--p-Color);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--titles-Color);
+
+}
+
+h1 {
+    color: var(--titles-Color);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        background-color: var(--backgroundBodyColor);
+        text-align: center;
+        width: 99.9%;
+    }
+
+    header {
+        background-color: #72B5A4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 20px solid #F15E46;
+        width: 99.9%;
+    }
+
+    #logo {
+        margin-left: 1%;
+        width: 35%;
+        height: 15%;
+    }
+    .textAnime {
+        margin-top: 2%;
+        margin-left: 6%;
+        width: 50%;
+        font-size: 150%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        color: #e95a44;
+    }
+    @keyframes txtAnime {
+        0% {content: 'Animal Point';}
+        25% {content: '';}
+        75% {content: 'Animal Point';}
+        100% {content: '';}
+        
+    }
+    .search {
+        display: flex;
+        margin-top: 8%;
+        width: 55%;
+        height: 25px;
+        margin-left: 3%;
+    }
+
+    .search input {
+        width: 60%;
+        border-radius: 1em;
+        border: 1px solid #CEE0DC;
+        background-color: var(--inputsColor);
+    }
+
+    .search input:hover {
+        background-color: rgb(206, 206, 206);
+    }
+
+    #iconSearch {
+        width: 15%;
+        cursor: pointer;
+        margin-right: 0.5%;
+    }
+
+
+
+    .row {
+        width: 99.9%;
+        display: block;
+    }
+
+    .card {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 10%;
+        width: 80%;
+        height: 40%;
+        border-radius: 0.9em;
+        border-bottom: 27px solid #F15E46;
+        text-align: center;
+        background-color: var(--backgroundsCardsColor);
+    }
+
+    .card p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
+
+    .card img {
+        width: 40%;
+        margin-bottom: 10%;
+    }
+
+    .card:hover {
+        border: 3px dotted #F15E46;
+        box-shadow: 1px 1px 2px 2px #F15E46;
+    }
+
+    .card2 {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 10%;
+        width: 80%;
+        height: 55%;
+        border-radius: 0.9em;
+        border-bottom: 27px solid #72B5A4;
+        text-align: center;
+        background-color: var(--backgroundsCardsColor);
+    }
+
+    .card2 p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
+
+    .card2 img {
+        width: 40%;
+        margin-bottom: 10%;
+    }
+
+    .card2:hover {
+        border: 3px dotted #72B5A4;
+        box-shadow: 1px 1px 2px 2px #72B5A4;
+    }
+
+    main input {
+        border: 0.5px solid gray;
+        border-radius: 1em;
+        width: 40%;
+        height: 4.5vh;
+        background-color: var(--inputsColor);
+    }
+
+    main input:hover {
+        background-color: rgb(206, 206, 206);
+    }
+
+    textarea {
+        width: 40%;
+        height: 150px;
+        border-radius: 0.6em;
+        background-color: var(--inputsColor);
+    }
+
+    textarea:hover {
+        background-color: rgb(206, 206, 206);
+    }
+
+    #botaoEnviar {
+        margin-left: -20%;
+        margin-top: 1%;
+        width: 20%;
+        height: 6vh;
+        font-size: 18px;
+        background-color: #F15E46;
+        color: #EAFFFA;
+        cursor: pointer;
+    }
+
+    #botaoEnviar:hover {
+        opacity: 0.8;
+        box-shadow: 1px 1px #F15E46;
+    }
+
+    hr {
+        border: 2px solid #ffffff;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        background-color: #F15E46;
+        height: 15%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color: var(--p-Color);
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100%;
+    }
+
+    h2 {
+        color: var(--titles-Color);
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    h1 {
+        color: var(--titles-Color);
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    #switch {
+        display: none;
+    }
+
+    #switch:checked+.switchLabel:after {
+        content: 'on';
+    }
+
+    .switchLabel {
+        cursor: pointer;
+    }
+
+    .switchLabel:after {
+        content: 'off';
+    }
+}
