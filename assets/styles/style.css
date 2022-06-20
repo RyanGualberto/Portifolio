@@ -21,11 +21,11 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    scrollbar-width: 1px;
-    scrollbar-color: #060940;
 }
 
 html {
+    scrollbar-width: 1px;
+    scrollbar-color: #060940;
     scroll-behavior: smooth;
 }
 
