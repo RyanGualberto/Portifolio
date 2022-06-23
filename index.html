@@ -226,14 +226,14 @@
 
             <div class="content" >
                 <h1>Entre em contato</h1>
-                <form>
+                <form action="contato.php" method="post" name="form">
                     <label for="name">Nome</label>
-                    <input type="text" name="name" class="text-Input">
+                    <input type="text" name="nome" class="text-Input">
                     <label for="email">Email</label>
                     <input type="email" name="email" class="text-Input">
                     <label for="mensage">Mensagem</label>
-                    <input type="text" name="mensage" class="text-Area">
-                    <input type="submit" value="Enviar" class="btn-enviar">
+                    <input type="text" name="mensagem" class="text-Area">
+                    <input type="submit" value="Enviar" name="submit" class="btn-enviar">
                 </form>
                     <h1>outros métodos</h1>
                     <group-links>
